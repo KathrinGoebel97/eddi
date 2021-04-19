@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template><delay>2</delay>
+Leider ist dies nur eine Testversion und dein Antworten sind auf die Auswahlmöglichkeiten beschränkt. 😢</template>
+  </category>
+<category>
+    <pattern>Hallo</pattern>
+    <template><delay>1</delay>
+Hallo ich bin Eddi!👋
+<delay>2</delay>
+Du befindest dich gerade bei dem Produkt "
+The Unisex Shirt
+" von PHYNE. Wobei kann ich dir helfen? 👇
+<image>https://cdn.shopify.com/s/files/1/0416/4347/5102/products/giS5ngJIv6_800x.jpg?v=1606516236</image>
+<reply>
+    <text>Zertifizierung</text>
+    <postback>Zertifizierung</postback>
+</reply>
+<reply>
+    <text>Produktinformation</text>
+    <postback>Produktinformation</postback>
+</reply>
+<reply>
+    <text>Brandinformation</text>
+    <postback>Brandinformation</postback>
+</reply></template>
+</category>
+<category>
+    <pattern>Produktinformation</pattern>
+    <template><delay>2</delay>
+Worüber genau möchtest du mehr wissen? 👚
+<reply>
+    <text>Herkunftsland</text>
+    <postback>Herkunftsland</postback>
+</reply>
+<reply>
+    <text>Materialien</text>
+    <postback>Materialien</postback>
+</reply></template>
+</category>
+<category>
+    <pattern>Danke</pattern>
+    <template><delay>1</delay>
+Gerne! 😊 Kann ich dir noch weiterhelfen?
+<reply>
+    <text>Nein, danke.</text>
+    <postback>Nein, danke </postback>
+</reply>
+<reply>
+    <text>Ja!</text>
+    <postback>Ja</postback>
+</reply></template>
+</category>
+<category>
+    <pattern>Ja </pattern>
+    <template><delay>1</delay>
+Wobei kann ich dir noch weiterhelfen? 😊
+<reply>
+    <text>Zertifizierung</text>
+    <postback>Zertifizierung</postback>
+</reply>
+<reply>
+    <text>Produktinformation</text>
+    <postback>Produktinformation</postback>
+</reply>
+<reply>
+    <text>Brandinformation</text>
+    <postback>Brandinformation</postback>
+</reply>
+</template>
+</category>
+<category>
+    <pattern>Grüner Knopf </pattern>
+    <template><delay>2</delay>
+Der Grüne Knopf ist ein staatliches Siegel für nachhaltige Textilien. Wer nachhaltige sozial und ökologisch hergestellte Kleidung kaufen möchte, achtet auf den Grünen Knopf. Direkt am Produkt angebracht, ist er beim Einkauf leicht zu finden - verlässlich und verbraucherfreundlich. 🌎
+<delay>1</delay>
+Mehr erfährst du über diesen Link. 👇 
+<link>
+    <text>Grüner Knopf</text>
+    <url>https://www.gruener-knopf.de/gruener-knopf#:~:text=Der%20Gr%C3%BCne%20Knopf%20ist%20das%20staatliche%20Siegel%20f%C3%BCr%20sozial%20und,Einzelne%20Vorzeigeprodukte%20reichen%20nicht.</url>
+</link>
+<image>https://www.pfi-germany.de/fileadmin/user_upload/GruenerKnopf.png</image>
+<reply>
+    <text>Danke!</text>
+    <postback>Danke!</postback>
+</reply></template>
+</category>
+<category>
+    <pattern>Nein, danke </pattern>
+    <template><delay>1</delay>
+Vielen Dank, dass Du mit mir gesprochen hast! 👋
+Mit untenstehendem Link gelangst du zur Umfrage 👇
+
+<link>
+    <text>Link zur Umfrage</text>
+    <url>https://chatbotsimmodehandel.questionpro.com</url>
+</link></template>
+</category>
+<category>
+    <pattern>Zertifizierung</pattern>
+    <template><delay>2</delay>Das T-Shirt hat diese Zertifizierungen.
+<delay>1</delay>
+Wenn du wissen möchtest, was hinter den Zertifizierungen steckt, Tippe den Namen des Zertifikats ein. 👇
+<reply>
+    <text>Grüner Knopf</text>
+    <postback>Grüner Knopf</postback>
+</reply>
+<reply>
+    <text>GOTS</text>
+    <postback>GOTS</postback>
+</reply></template>
+</category>
+
+<category>
+    <pattern>GOTS</pattern>
+    <template><delay>2</delay>
+Der Global Organic Textile Standard (GOTS) ist seit 2006 ein weltweiter Standard für die Herstellung von Textilien, die aus Naturfasern aus biologischem Anbau gefertigt werden. Er beinhaltet Umwelt- und Sozialkriterien.
+<delay>1</delay>
+Mehr erfährst du auf der Webseite. 👇
+<link>
+    <text>GOTS Siegel</text>
+    <url>https://www.global-standard.org/</url>
+</link>
+<image>data:image/png;base64,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</image>
+<reply>
+    <text>Danke!</text>
+    <postback>Danke!</postback>
+</reply>
+</template>
+</category>
+
+<category>
+    <pattern>Danke!</pattern>
+    <template>Gerne! 😊 Kann ich dir noch weiterhelfen?
+<reply>
+    <text>Ja!</text>
+    <postback>Ja!</postback>
+</reply>
+<reply>
+    <text>Nein, danke.</text>
+    <postback>Nein, danke.</postback>
+</reply></template>
+</category>
+<category>
+    <pattern>Brandinformation</pattern>
+    <delay>2</delay>
+    <template><delay>2</delay>
+    PHYNE steht für transparente Nachhaltigkeit, höchste Qualität und Innovation. Im Bereich Produktdesign steht Qualität ganz klar vorne
+85% der Wertschöpfung geschehen im Norden Portugals, was zu geringeren CO2 Emissionen führt. 🌱
+<image>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8AAADLy8v8/PwlJSV7e3udnZ2goKBQUFA3Nzfj4+P29vbw8PCVlZXPz8+KioowMDBgYGDX19dDQ0O5ublpaWnd3d2urq6QkJALCwseHh4/Pz90dHRvb2/n5+ctLS2rq6sUFBSCgoISEhJXV1dKSkqPxwKrAAADzUlEQVR4nO3a63qiMBSFYRCderai1YrW2oP3f4tTSIAcNgWZkenDfO8vbTBkySYEbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/1jk+G6zuqbvuyg2aNRh5LytUpcvWIS+4fV02dmbDbKGqdhF1rQotwr3Ffuaq+ZtuemTuN1L2vRSBBRGaFjWJfxV9cmjNc7ahA/Zy2f12bm8r3XWuDI6VGldo7RlVCQc3ilhGF6NQA0TRsfszVrcbpu1TSIzYSJ9GZ0lDA9lqTZMGMTqk9KhmR2yptjs0CjGOyecGIbJW/7pt9mtCXWdHoRD85S1LKwO5S9DSphMZMO4UcKh/bfovJ+o3Z9uThi8VhwaVaMbu8OU/2VICX/VBamkEs7cP0en0MrUPGFFnc4Tu4cyoX/SSgkX3lZNVSTMJ753a0BNEuo6fXO6VN/YpXhfJvTrtKOE52zvH9aAGiXU86ldpwP3cBkJvZO2o4R6ZpiaA2qUMK/TgbGJnkeNKKpDNc+51/2uEu7Ncd6SUNep2enIK0fVYTCR6rSrhANz5zcl1ON+L94LSzSdcBm6BzfoLuGyfcKdGnd+MZ5lV5APayc6YbByT9Cg62PYpkrz9bxeoAXv3nlZJozU8bYWwV0lVKPcmQNqnDDYhOWwYqdmjQ6LVqtOu0o4ycdQDqh5Qj3uc/r60TyeuSKhrlPzJO0o4dY6QQblgD1SQl0Bn1+vHrJX7vKxTKjXecZ82k1C56KmBvT6KBETBkf9+XMoDtBI6NWplHAULyU7t9+mCWfqi5cWyhW8hNPsz49q4bBxW82E+vpZzqc33D3Jd6JCwt25MN0t96dEd1DU1u0JdZ1aK6OKhHqdV8ynNySUH4P4CeuH3SKhnk9TF7/RTOjWaXcJjZOnTcI4b/sU9msldK77d6hS0dC8RN96tbD6lp7F2An1fLqvTjh+XkkurRMma3s13CphcM2axOdpTkLz+nmPe/zD2vA0et7H7tfeLuGDHcPvsHy/MIruHtfD2ifHd09ozqddrdqEAd0xoTmf9jShvu6n825fE+ql/qXHCdV98+Hc34TF+rS/CfU6b7vqb0I1n36s+5vQ/L22pwn1fNrnhNPeJyzr1Em4ms0r1K04f1rC4r656W/AtT8C/7iE+X1z44R1PwL/uIR5nf7dhMmfJxTvUFsl1HVaJky8UJa6Kt1vxuPxujZhnG52lJ8IX7+aNuJ/CWWdH6s79B8ypnZph9di8ozW4+9sGjwyBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID/ym/bsTJxNBDvmAAAAABJRU5ErkJggg==</image>
+    
+    <link>
+        <text>Mehr über PHYNE</text>
+        <url>https://entire-stories.com/pages/brands/phyne</url>
+    </link><reply>
+        <text>Danke!</text>
+        <postback>Danke!</postback>
+    </reply>
+</template>
+</category>
+<category>
+    <pattern>Herkunftsland</pattern>
+    <template>Das T-Shirt wurde unter fairen Arbeitsbedingungen in Portugal produziert. 
+<image>https://cdn.shopify.com/s/files/1/0416/4347/5102/files/production-banner-phyne.jpg?v=1606164907</image>
+<reply>
+    <text>Danke!</text>
+    <postback>Danke!</postback>
+</reply></template>
+</category>
+<category>
+    <pattern>Materialien</pattern>
+    <template>Das T-Shirt besteht aus 100% Baumwolle. 🌱
+<reply>
+    <text>Danke!</text>
+    <postback>Danke!</postback>
+</reply></template>
+</category>
+</aiml>
